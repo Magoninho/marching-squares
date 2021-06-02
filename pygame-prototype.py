@@ -33,7 +33,7 @@ def draw():
 
 
     # gera terreno
-    xoff = 0;
+    xoff = 0
     for i in range(cols):
         xoff += 0.1
         yoff = 0
@@ -88,7 +88,7 @@ def draw():
     # pygame.draw.polygon(screen, (255, 255, 255), final_vertices)
 clock = pygame.time.Clock()
 while True:
-    clock.tick(30)
+    clock.tick(60)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
