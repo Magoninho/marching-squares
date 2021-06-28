@@ -7,8 +7,8 @@
 #include "OpenSimplexNoise.hpp"
 
 const sf::Color COLOR = sf::Color::White;
-constexpr int WIDTH = 1980;
-constexpr int HEIGHT = 1080;
+constexpr int WIDTH = 1000;
+constexpr int HEIGHT = 800;
 constexpr int8_t RESOLUTION = 10;
 
 constexpr int cols = (1 + WIDTH / RESOLUTION);
@@ -86,9 +86,9 @@ void desenha(sf::RenderWindow &window) {
 			yoff += 0.1;
 		}
 	}
-	zoff += 0.05;
+        zoff += 0.05;
 
-	for (int i = 0; i < cols - 1; i++) {
+        for (int i = 0; i < cols - 1; i++) {
 		for (int j = 0; j < rows - 1; j++) {
 			sf::Vertex point(sf::Vector2f(i * RESOLUTION, j * RESOLUTION), sf::Color::White);
 			window.draw(&point, 1, sf::Points);
@@ -169,7 +169,7 @@ int main() {
 		while (window.pollEvent(event)) {
 			if (event.type == sf::Event::Closed)
 				window.close();
-			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) 
+			if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
 				window.close();
 		}
 

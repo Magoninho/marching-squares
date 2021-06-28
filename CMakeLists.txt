@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
 project(MarchingSquares)
 
+set(CMAKE_CXX_FLAGS_DEBUG_INIT "-g -Wall -Werror")
+set(CMAKE_CXX_FLAGS_RELEASE_INIT "-O3")
+
 # picks all the source files from the src directory
 file(GLOB SOURCE_FILES "src/*.cpp" "src/*h")
 message(${SOURCE_FILES})

@@ -1,0 +1,3 @@
+/home/mago/GitHub/marching-square/release/CMakeFiles/rebuild_cache.dir
+/home/mago/GitHub/marching-square/release/CMakeFiles/edit_cache.dir
+/home/mago/GitHub/marching-square/release/CMakeFiles/MarchingSquares.dir

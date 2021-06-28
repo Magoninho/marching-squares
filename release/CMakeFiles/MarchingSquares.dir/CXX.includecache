@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mago/GitHub/marching-square/src/OpenSimplexNoise.hpp
+array
+-
+vector
+-
+memory
+-
+ctime
+-
+
+/home/mago/GitHub/marching-square/src/main.cpp
+math.h
+-
+stdio.h
+-
+SFML/Graphics.hpp
+-
+iostream
+-
+OpenSimplexNoise.hpp
+/home/mago/GitHub/marching-square/src/OpenSimplexNoise.hpp
+
