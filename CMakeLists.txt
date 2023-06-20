@@ -11,5 +11,8 @@ message(${SOURCE_FILES})
 # add the source files to the project executable
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
+find_package(SFML 
+            COMPONENTS
+              system window graphics network audio REQUIRED)
 # links the sfml library (i don't know if works on windows)
 target_link_libraries(${PROJECT_NAME} sfml-graphics sfml-window sfml-system)
